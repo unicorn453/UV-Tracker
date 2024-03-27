@@ -1,0 +1,39 @@
+.header-wrapper {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(64, 64, 69, 0.1);
+  position: fixed; /* Ensures the header stays at the top even when scrolling */
+  top: 0; /* Position at the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures the header appears above other content */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.content {
+  margin-top: 70px; /* Adjust the margin to prevent content from being hidden behind the header */
+  /* Additional styling for content */
+}
+
+.nav-wrapper ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.nav-list {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.nav-item {
+  color: var(--border-color);
+}

@@ -30,7 +30,7 @@ async function fetchUVDataByCoordinates(latitude, longitude) {
   myHeaders.append("x-access-token", "openuv-1atfrlu8sxl2i-io");
   myHeaders.append("Content-Type", "application/json");
   const currentDate = new Date().toISOString().split("T")[0];
-  const apiUrl = `https://api.openuv.io/api/v1/uv?lat=${latitude}&lng=${longitude}&alt=100&dt=${currentDate}`;
+  const apiUrl = `https://api.openuv.io/api/v1/uv?lat=${latitude}&lng=${longitude}&alt=100&dt=`;
 
   const requestOptions = {
     method: "GET",
