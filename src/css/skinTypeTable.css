@@ -61,3 +61,14 @@
     top: 6px; /* Adjust top padding for content */
   }
 }
+/* @media (max-width: 768px) {
+  .skin-type-table th,
+  .skin-type-table td {
+    padding: 6px;
+  }
+} */
+@media (max-width: 768px) {
+  .skin-type-table {
+    display: none;
+  }
+}
