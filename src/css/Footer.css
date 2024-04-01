@@ -1,0 +1,24 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+}
+
+.social-link {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  margin: 0 10px; /* Add space between icons */
+}
+
+.social-link:hover {
+  color: #007bff; /* Change color on hover */
+}

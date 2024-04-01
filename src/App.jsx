@@ -11,6 +11,9 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
+import ContactPage from "./components/ContactPage.jsx";
+import Footer from "./components/Footer.jsx";
+
 function App() {
   return (
     <>
@@ -19,7 +22,9 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </>

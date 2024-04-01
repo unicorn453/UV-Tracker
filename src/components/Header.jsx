@@ -14,6 +14,15 @@ function Header() {
                   Home
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/contact"
+                  className="nav-link"
+                  activeClassName="active"
+                >
+                  Contact
+                </NavLink>
+              </li>
               {/* Add more navigation items as needed */}
             </ul>
           </nav>
