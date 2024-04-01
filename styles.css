@@ -30,3 +30,27 @@ th,
 td {
   padding: 8px;
 }
+.warning-message {
+  background-color: #ffcccc; /* Light red background */
+  color: #cc0000; /* Dark red text */
+  padding: 10px; /* Padding around the text */
+  border: 1px solid #cc0000; /* Dark red border */
+  margin-top: 10px; /* Spacing above the message */
+  font-weight: bold; /* Bold text */
+}
+.danger-message {
+  background-color: #e27676; /* Light red background */
+  color: #a60000; /* Dark red text */
+  padding: 10px; /* Padding around the text */
+  border: 1px solid #cc0000; /* Dark red border */
+  margin-top: 10px; /* Spacing above the message */
+  font-weight: bold; /* Bold text */
+}
+.safe-message {
+  background-color: #d9f0cf; /* Light red background */
+  color: #017307; /* Dark red text */
+  padding: 10px; /* Padding around the text */
+  border: 1px solid #1e9301; /* Dark red border */
+  margin-top: 10px; /* Spacing above the message */
+  font-weight: bold; /* Bold text */
+}

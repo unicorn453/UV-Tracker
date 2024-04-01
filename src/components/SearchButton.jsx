@@ -20,7 +20,7 @@ function SearchButton() {
 
   return (
     <button id="searchButton" onClick={handleClick}>
-      Search
+      Търси
     </button>
   );
 }

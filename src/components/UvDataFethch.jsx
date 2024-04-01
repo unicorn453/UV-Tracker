@@ -24,10 +24,13 @@ function UVDataFetch() {
   return (
     <>
       <div className="container">
-        <h1>UV Tracker</h1>
-        <input type="text" id="locationInput" placeholder="Enter location" />
+        <h1>UV Замерване</h1>
+        <input type="text" id="locationInput" placeholder="Град на латиница" />
         <SearchButton /> {/* Use the SearchButton component here */}
-        <div id="uvData">UV Data is being fetched...</div>
+        <div id="uvData">
+          Моля Въведете град на Английски с латински букви (Областни градове
+          показват по-акуратна информация!)
+        </div>
       </div>
     </>
   );

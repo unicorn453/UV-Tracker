@@ -1,0 +1,63 @@
+.skin-type-table {
+  width: 100%; /* Adjust width as needed */
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px; /* Adjust font size for better readability */
+}
+
+.skin-type-table th,
+.skin-type-table td {
+  padding: 8px; /* Adjust padding for spacing */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.skin-type-table th {
+  background-color: #f2f2f2;
+}
+
+.skin-type-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.skin-type-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .skin-type-table {
+    width: 100%; /* Adjust width for smaller screens */
+    display: block;
+  }
+
+  .skin-type-table thead,
+  .skin-type-table tbody,
+  .skin-type-table tr,
+  .skin-type-table th,
+  .skin-type-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .skin-type-table td,
+  .skin-type-table th {
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ddd; /* Add bottom border for each row */
+    position: relative;
+    padding-left: 50%; /* Adjust padding for indentation */
+  }
+
+  .skin-type-table td:before,
+  .skin-type-table th:before {
+    position: absolute;
+    left: 6px; /* Adjust left padding for content */
+    width: 45%; /* Adjust width of content area */
+    white-space: nowrap;
+    content: attr(data-label);
+  }
+
+  .skin-type-table tbody td:before {
+    top: 6px; /* Adjust top padding for content */
+  }
+}
