@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <div className="hero-section">
       <img
-        src="src/assets/hero-image.jpg"
+        src="/assets/hero-image.jpg"
         alt="Hero Image"
         className="hero-image"
       />
