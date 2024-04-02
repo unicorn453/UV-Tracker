@@ -3,6 +3,7 @@ import { fetchUVData } from "../uvDataFetcher.js";
 import { displayUVData } from "../uvDataDisplay.js";
 import SearchButton from "./SearchButton";
 import "../css/UvDataFetch.css";
+import "../css/styles.css";
 
 function UVDataFetch() {
   useEffect(() => {

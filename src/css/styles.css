@@ -30,6 +30,7 @@ th,
 td {
   padding: 8px;
 }
+
 .warning-message {
   background-color: #ffcccc; /* Light red background */
   color: #cc0000; /* Dark red text */
@@ -38,6 +39,7 @@ td {
   margin-top: 10px; /* Spacing above the message */
   font-weight: bold; /* Bold text */
 }
+
 .danger-message {
   background-color: #e27676; /* Light red background */
   color: #a60000; /* Dark red text */
@@ -46,6 +48,7 @@ td {
   margin-top: 10px; /* Spacing above the message */
   font-weight: bold; /* Bold text */
 }
+
 .safe-message {
   background-color: #d9f0cf; /* Light red background */
   color: #017307; /* Dark red text */
@@ -53,4 +56,50 @@ td {
   border: 1px solid #1e9301; /* Dark red border */
   margin-top: 10px; /* Spacing above the message */
   font-weight: bold; /* Bold text */
+}
+.header-item {
+  color: rgb(107, 67, 67);
+  text-decoration: solid;
+  font-weight: bold;
+}
+/* Remove bullet points for all UL elements */
+#uvData ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(176, 165, 50); /* Add border to list items */
+  padding: 8px;
+}
+#uvData li {
+  border: 1px solid black; /* Add border to list items */
+  padding: 8px;
+}
+
+/* CSS for mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px; /* Reduce margin for smaller screens */
+    margin-top: 50px; /* Reduce margin-top for smaller screens */
+  }
+
+  table {
+    width: 100%; /* Ensure table takes full width */
+    display: block; /* Change display to block to make it stack vertically */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  #uvData ul {
+    border: 1px solid black; /* Add border to list items */
+    padding: 8px;
+  }
+  #uvData li {
+    border: 1px solid black; /* Add border to list items */
+    padding: 8px;
+  }
+  th,
+  td {
+    display: inline-block; /* Change display to inline-block */
+    width: 50%; /* Adjust width as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: left; /* Align text to the left */
+  }
 }
