@@ -7,6 +7,7 @@
   left: 0;
   right: 0;
   z-index: 1000; /* Ensures the header appears above other content */
+  background-color: rgb(180, 220, 220);
 }
 
 .header {
@@ -36,4 +37,14 @@
 }
 .nav-item {
   color: var(--border-color);
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-list {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
 }

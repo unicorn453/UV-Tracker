@@ -37,22 +37,34 @@
   margin-bottom: 20px; /* Adjust margin as needed */
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
-  .hero-text {
-    order: -1; /* Move the text section before the image */
-    padding-bottom: 20px; /* Add space between text and image */
-  }
-
   .hero-image {
-    margin-top: 20px; /* Add space above the image */
+    position: static; /* Reset position to default */
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1; /* Set z-index to ensure it's behind the text */
+  }
+  .hero-text {
+    max-height: 70vh; /* Limit the height of the hero text box */
+    position: static; /* Reset position to default */
+    width: 100%; /* Take full width */
+    text-align: center;
+    color: white; /* Adjust text color as needed */
+    background-color: rgba(140, 224, 224);
+    padding: 20px; /* Add padding for spacing */
+    z-index: 2; /* Set z-index to ensure it's above the image */
+    margin-top: 10px; /* Add margin-top to center the text vertically */
+    margin-bottom: 30px;
   }
 
   .hero-text h1 {
-    font-size: 1.8rem; /* Adjust heading font size for mobile devices */
+    font-size: 1.5rem; /* Adjust heading font size for mobile devices */
+    margin-bottom: 0; /* Remove bottom margin of heading */
   }
 
   .hero-text p {
-    font-size: 1rem; /* Adjust paragraph font size for mobile devices */
+    font-size: 0.9rem; /* Adjust paragraph font size for mobile devices */
+    margin-bottom: 20px; /* Remove bottom margin of paragraph */
   }
 }

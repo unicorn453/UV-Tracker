@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { fetchUVData } from "../uvDataFetcher.js";
 import { displayUVData } from "../uvDataDisplay.js";
 import SearchButton from "./SearchButton";
+import "../css/UvDataFetch.css";
 
 function UVDataFetch() {
   useEffect(() => {
